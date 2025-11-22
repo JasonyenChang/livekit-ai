@@ -1,27 +1,25 @@
-# Agent Starter for React
+# Real-Time AI Voice Conversation Starter
 
-This is a starter template for [LiveKit Agents](https://docs.livekit.io/agents) that provides a simple voice interface using the [LiveKit JavaScript SDK](https://github.com/livekit/client-sdk-js). It supports [voice](https://docs.livekit.io/agents/start/voice-ai), [transcriptions](https://docs.livekit.io/agents/build/text/), and [virtual avatars](https://docs.livekit.io/agents/integrations/avatar).
+A minimal full-stack application demonstrating real-time bi-directional voice conversation between a human and an AI assistant using [LiveKit Javascript SDK](https://github.com/livekit/client-sdk-js), [Next.js](https://nextjs.org/docs/app/getting-started/installation), and an [AI Voice Agent](https://docs.livekit.io/agents/start/voice-ai/#starters).
 
-Also available for:
-[Android](https://github.com/livekit-examples/agent-starter-android) • [Flutter](https://github.com/livekit-examples/agent-starter-flutter) • [Swift](https://github.com/livekit-examples/agent-starter-swift) • [React Native](https://github.com/livekit-examples/agent-starter-react-native)
+This application implements:
 
-<picture>
-  <source srcset="./.github/assets/readme-hero-dark.webp" media="(prefers-color-scheme: dark)">
-  <source srcset="./.github/assets/readme-hero-light.webp" media="(prefers-color-scheme: light)">
-  <img src="./.github/assets/readme-hero-light.webp" alt="App screenshot">
-</picture>
+- Real-time audio streaming
+- Human → AI → Human voice loop
+- LiveKit token server
+- Frontend React UI + audio playback
+- AI agent with LLM, STT, TTS
 
 ### Features:
 
-- Real-time voice interaction with LiveKit Agents
-- Camera video streaming support
-- Screen sharing capabilities
-- Audio visualization and level monitoring
-- Virtual avatar integration
-- Light/dark theme switching with system preference detection
-- Customizable branding, colors, and UI text via configuration
+Frontend (Next.js + React + TypeScript)
 
-This template is built with Next.js and is free for you to use or modify as you see fit.
+- Clean UI
+- Start Conversation / End Conversation
+- Connection status indicator
+- Microphone on/off indicator
+- Subscribes to AI audio tracks from LiveKit room
+- Plays AI-generated audio in real time
 
 ### Project structure
 
