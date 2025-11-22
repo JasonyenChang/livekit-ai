@@ -53,6 +53,38 @@ livekit-ai/
 
 ## Getting started
 
+### Launch frontend
+Install the packages.
+```bash
+npm install
+```
+
+Then run the app with:
+```bash
+npm run dev
+```
+
+And open http://localhost:3000 in your browser.
+
+### Launch the token server
+Install the packages.
+```bash
+npm install
+```
+
+Configure your LiveKit credentials in `.env` (copy `.env.example` if you don't have one):
+```env
+LIVEKIT_API_KEY=your_livekit_api_key
+LIVEKIT_API_SECRET=your_livekit_api_secret
+LIVEKIT_URL=https://your-livekit-server-url
+```
+
+Then run the app with:
+```bash
+npm run dev
+```
+
+
 > [!TIP]
 > If you'd like to try this application without modification, you can deploy an instance in just a few clicks with [LiveKit Cloud Sandbox](https://cloud.livekit.io/projects/p_/sandbox/templates/agent-starter-react).
 
