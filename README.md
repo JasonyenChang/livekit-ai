@@ -38,24 +38,17 @@ AI Agent (LiveKit Agents SDK)
 ### Project structure
 
 ```
-agent-starter-react/
-├── app/
-│   ├── (app)/
-│   ├── api/
-│   ├── components/
-│   ├── fonts/
-│   ├── globals.css
-│   └── layout.tsx
-├── components/
-│   ├── livekit/
-│   ├── ui/
-│   ├── app.tsx
-│   ├── session-view.tsx
-│   └── welcome.tsx
-├── hooks/
-├── lib/
-├── public/
-└── package.json
+livekit-ai/
+├── livekit-ai/         # Frontend (Next.js)
+│   ├── app/page.tsx
+│
+├── livekit-token-server/       # Node backend (Express)
+│   ├── src/server.ts
+│
+├── livekit-voice-agent/        # LiveKit AI Agent worker
+│   ├── agent.ts
+│
+└── README.md
 ```
 
 ## Getting started
