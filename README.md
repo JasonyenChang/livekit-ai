@@ -89,7 +89,12 @@ npm run dev
 
 ### Launch the voice agent
 > [!NOTE]
-> Agent requires Node.js >= 20 and [pnpm](https://pnpm.io/installation).
+> Agent requires Node.js >= 20 and install [pnpm](https://pnpm.io/installation).
+
+Install pnpm if you don't have one.
+```bash
+brew install pnpm
+```
 
 Install the packages.
 ```bash
