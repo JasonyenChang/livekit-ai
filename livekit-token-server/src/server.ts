@@ -39,8 +39,6 @@ app.get("/token", async (req, res) => {
         res.json({
             url: LIVEKIT_URL,
             token,
-            room: roomName,
-            identity,
         });
     } catch (error) {
         console.error(error);
