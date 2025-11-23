@@ -1,6 +1,6 @@
 # Real-Time AI Voice Conversation Starter
 
-A simple full-stack application demonstrating real-time bi-directional voice conversation between a human and an AI assistant using [LiveKit Javascript SDK](https://github.com/livekit/client-sdk-js), [Next.js](https://nextjs.org/docs/app/getting-started/installation), and an [AI Voice Agent](https://docs.livekit.io/agents/start/voice-ai/#starters).
+A simple full-stack application demonstrating real-time bi-directional voice conversation between a human and an AI assistant using [LiveKit Javascript SDK](https://github.com/livekit/client-sdk-js), [Next.js](https://nextjs.org/docs/app/getting-started/installation) Node.js, and an [AI Voice Agent](https://docs.livekit.io/agents/start/voice-ai/#starters).
 
 This application implements:
 
@@ -30,9 +30,9 @@ AI Agent (LiveKit Agents SDK)
 
 - Listens for user speech
 - VAD (voice activity detection)
-- STT (AssemblyAI universal streaming)
+- Speech to text
 - LLM (OpenAI GPT-4.1-mini)
-- TTS (Cartesia Sonic 3)
+- Text to speech
 - Sends audio back to room as LiveKit track
 
 ### Project structure
@@ -44,10 +44,13 @@ livekit-ai/
 │
 ├── livekit-token-server/       # Node backend (Express)
 │   ├── src/server.ts
+│   ├── .env
 │
 ├── livekit-voice-agent/        # LiveKit AI Agent worker
 │   ├── agent.ts
+│   ├── .env.local
 │
+├── AI_PROMPTS.md
 └── README.md
 ```
 
