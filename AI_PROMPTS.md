@@ -63,7 +63,7 @@ Integrate the token api request into the frontend code. Make sure to provide me 
 ```
 
 To build the voice agent, I used the following prompt:
-bash```
+```bash
 Build a voice agent that integrates with the OpenAI Realtime API, processes incoming audio in real time, and responds with AI-generated speech.
 ```
 
