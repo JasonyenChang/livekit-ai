@@ -20,6 +20,16 @@ Requirements:
     - Stream audio to the room
     - Receive audio from the room
     - Handle connection lifecycle (connect/disconnect)
+
+3. Backend Service
+- Create a simple backend endpoint (Node.js/Python) that:
+    - Generates LiveKit access tokens for clients
+    - Returns room connection details
+    - Handles basic error cases
+
+4. Basic AI Integration
+- Integrate with OpenAI Realtime API
+- Process incoming audio and respond with AI-generated speech
 ```
 
 Based on this prompt, ChatGPT suggested that I need to create the following project structure.
@@ -42,12 +52,19 @@ First, I asked ChatGPT to build the token server using the following prompt:
 Build a LiveKit Token Server using Node.js
 ```
 
-After reading the token server code snippet, I realized that LiveKit environment variables were required, so I asked ChatGPT again
+After reading the token server code snippet, I realized that LiveKit environment variables were required, so I asked ChatGPT again.
 ```bash
-How can I generate LIVEKIT_API_KEY and LIVEKIT_API_SECRET?
+How to generate LIVEKIT_API_KEY and LIVEKIT_API_SECRET?
 ```
 
 After completing the token server, I asked ChatGPT to integrate the token API request into the frontend code using the following prompt:
 ```bash
 Integrate the token api request into the frontend code. Make sure to provide me the complete code in page.tsx
 ```
+
+To build the voice agent, I used the following prompt:
+bash```
+Build a voice agent that integrates with the OpenAI Realtime API, processes incoming audio in real time, and responds with AI-generated speech.
+```
+
+However, I wasn't satisfied with the solutions provided by ChatGPT, as the SDK version was outdated and didn't work. Therefore, I consulted the LiveKit documentation, found a working [sample](https://docs.livekit.io/agents/start/voice-ai/#starters), and used that instead.
