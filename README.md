@@ -67,8 +67,6 @@ Then run the app with:
 npm run dev
 ```
 
-And open http://localhost:3000 in your browser.
-
 ### Launch the token server
 Install the packages.
 ```bash
@@ -113,3 +111,5 @@ Then run the app with:
 ```bash
 pnpm dev
 ```
+
+And open http://localhost:3000 in your browser.
