@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { AccessToken, VideoGrant } from "livekit-server-sdk";
+import crypto from "crypto";
 
 const app = express();
 app.use(cors());
@@ -17,7 +18,7 @@ const LIVEKIT_URL = process.env.LIVEKIT_URL!;
  */
 app.get("/token", async (req, res) => {
     try {
-        const roomName = "jason-chat-room";
+        const roomName = `room-${crypto.randomUUID()}`;
         const identity = "user-" + Math.random().toString(36).substring(2, 8);
 
         const at = new AccessToken(LIVEKIT_API_KEY, LIVEKIT_API_SECRET, {

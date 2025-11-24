@@ -38,11 +38,16 @@ export default defineAgent({
             room: ctx.room,
             inputOptions: {
                 noiseCancellation: BackgroundVoiceCancellation(),
-                closeOnDisconnect: false // Do not close the session while the user leave
+                closeOnDisconnect: true
             },
         });
 
         await ctx.connect();
+
+        session.on(voice.AgentSessionEventTypes.Close, (event) => {
+            console.log(`## Session closed (reason: ${event.reason})`);
+        });
+
 
         // Starting the conversation with greeting
         session.generateReply({
