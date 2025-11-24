@@ -56,6 +56,9 @@ livekit-ai/
 
 ## Getting started
 
+### Create a new project on LiveKit cloud
+[Create a new project](https://drive.google.com/file/d/1jLoTuNu6jJGhzF9OItWhENXFnnIipN19/view?usp=sharing)
+
 ### Launch frontend
 Install the packages.
 ```bash
@@ -74,6 +77,7 @@ npm install
 ```
 
 Configure your LiveKit credentials in `.env` (copy `.env.example` if you don't have one):
+[Toekn generation](https://drive.google.com/file/d/18G5z5WtV0cxdKakLW5pCpt82uyV_q9DA/view?usp=sharing)
 ```env
 LIVEKIT_API_KEY=your_livekit_api_key
 LIVEKIT_API_SECRET=your_livekit_api_secret
