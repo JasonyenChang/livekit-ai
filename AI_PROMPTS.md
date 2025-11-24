@@ -22,7 +22,7 @@ Requirements:
     - Handle connection lifecycle (connect/disconnect)
 
 3. Backend Service
-- Create a simple backend endpoint (Node.js/Python) that:
+- Create a simple backend endpoint (Node.js) that:
     - Generates LiveKit access tokens for clients
     - Returns room connection details
     - Handles basic error cases
