@@ -37,14 +37,15 @@ export default defineAgent({
             agent: assistant,
             room: ctx.room,
             inputOptions: {
-                // For telephony applications, use `TelephonyBackgroundVoiceCancellation` for best results
                 noiseCancellation: BackgroundVoiceCancellation(),
+                closeOnDisconnect: false // Do not close the session while the user leave
             },
         });
 
         await ctx.connect();
 
-        const handle = session.generateReply({
+        // Starting the conversation with greeting
+        session.generateReply({
             instructions: 'Greet the user and offer your assistance.',
         });
     },
