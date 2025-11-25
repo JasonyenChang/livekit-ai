@@ -102,6 +102,10 @@ Install the packages.
 ```bash
 pnpm install
 ```
+Download essential files.
+```bash
+pnpm download-files
+```
 
 Configure your LiveKit credentials in `.env.local` (copy `.env.example` if you don't have one):
 ```env
