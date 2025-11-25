@@ -120,4 +120,4 @@ Then run the app with:
 pnpm dev
 ```
 
-And open http://localhost:3000 in your browser.
+And open http://localhost:3000 in your browser, then you can start testing!
